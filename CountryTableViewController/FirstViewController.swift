@@ -11,28 +11,19 @@ import UIKit
 class FirstViewController: UIViewController {
     
   @IBOutlet weak var tblCountry: UITableView!
-  lazy var countryName : [Country] = []
+  lazy var countryNames : [Country] = []
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    loadCountries()
+
+    countryNames = DataStorage.getInstance().getAllCounties()
     // Do any additional setup after loading the view.
   }
-  func loadCountries()
-  {
-    countryName.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
-    countryName.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
-    countryName.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
-    countryName.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
-    countryName.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
-    
-}
 }
 extension FirstViewController : UITableViewDelegate, UITableViewDataSource
 {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return countryName.count
+    return countryNames.count
   }
    
   func numberOfSections(in tableView : UITableView) -> Int{
@@ -42,7 +33,7 @@ extension FirstViewController : UITableViewDelegate, UITableViewDataSource
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
   {
     let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell")
-    let country = countryName[indexPath.row]
+    let country = countryNames[indexPath.row]
      
     cell?.textLabel?.text = country.name
     cell?.detailTextLabel?.text = country.capital

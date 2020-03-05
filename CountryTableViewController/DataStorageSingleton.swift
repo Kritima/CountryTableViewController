@@ -10,12 +10,12 @@ import Foundation
 
 class DataStorage
 {
-    private let instance = DataStorage()
+    private static let instance = DataStorage()
     private lazy var countryList : [Country] = []
     
     private init() {}
     
-    func getInstance() -> DataStorage {
+   static func getInstance() -> DataStorage {
         return instance
     }
     
@@ -27,5 +27,16 @@ class DataStorage
     func getAllCounties() -> [Country]
     {
         return self.countryList
+    }
+    
+    func loadData()
+      {
+        
+        countryList.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
+        countryList.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
+        countryList.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
+        countryList.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
+        countryList.append(Country(name: "Afghanestan", capital: "Afghanestan", flag: #imageLiteral(resourceName: "home")))
+        
     }
 }
