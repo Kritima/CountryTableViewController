@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		CA35715F2410898300ECEDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35715E2410898300ECEDD8 /* AppDelegate.swift */; };
 		CA3571612410898300ECEDD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571602410898300ECEDD8 /* SceneDelegate.swift */; };
-		CA3571632410898300ECEDD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571622410898300ECEDD8 /* ViewController.swift */; };
+		CA3571632410898300ECEDD8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571622410898300ECEDD8 /* FirstViewController.swift */; };
 		CA3571662410898300ECEDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3571642410898300ECEDD8 /* Main.storyboard */; };
 		CA3571682410898400ECEDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3571672410898400ECEDD8 /* Assets.xcassets */; };
 		CA35716B2410898400ECEDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3571692410898400ECEDD8 /* LaunchScreen.storyboard */; };
 		CA3571732410946600ECEDD8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571722410946600ECEDD8 /* Country.swift */; };
+		CA3571752411BD2800ECEDD8 /* DataStorageSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571742411BD2800ECEDD8 /* DataStorageSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA35715B2410898300ECEDD8 /* CountryTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA35715E2410898300ECEDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3571602410898300ECEDD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA3571622410898300ECEDD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA3571622410898300ECEDD8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CA3571652410898300ECEDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA3571672410898400ECEDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA35716A2410898400ECEDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA35716C2410898400ECEDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3571722410946600ECEDD8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		CA3571742411BD2800ECEDD8 /* DataStorageSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				CA35715E2410898300ECEDD8 /* AppDelegate.swift */,
 				CA3571602410898300ECEDD8 /* SceneDelegate.swift */,
-				CA3571622410898300ECEDD8 /* ViewController.swift */,
+				CA3571622410898300ECEDD8 /* FirstViewController.swift */,
 				CA3571642410898300ECEDD8 /* Main.storyboard */,
 				CA3571672410898400ECEDD8 /* Assets.xcassets */,
 				CA3571692410898400ECEDD8 /* LaunchScreen.storyboard */,
 				CA35716C2410898400ECEDD8 /* Info.plist */,
 				CA3571722410946600ECEDD8 /* Country.swift */,
+				CA3571742411BD2800ECEDD8 /* DataStorageSingleton.swift */,
 			);
 			path = CountryTableViewController;
 			sourceTree = "<group>";
@@ -142,9 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3571732410946600ECEDD8 /* Country.swift in Sources */,
-				CA3571632410898300ECEDD8 /* ViewController.swift in Sources */,
+				CA3571632410898300ECEDD8 /* FirstViewController.swift in Sources */,
 				CA35715F2410898300ECEDD8 /* AppDelegate.swift in Sources */,
 				CA3571612410898300ECEDD8 /* SceneDelegate.swift in Sources */,
+				CA3571752411BD2800ECEDD8 /* DataStorageSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

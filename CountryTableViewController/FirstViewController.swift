@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
     
   @IBOutlet weak var tblCountry: UITableView!
   lazy var countryName : [Country] = []
     
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     loadCountries()
     // Do any additional setup after loading the view.
   }
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
     
 }
 }
-extension ViewController : UITableViewDelegate, UITableViewDataSource
+extension FirstViewController : UITableViewDelegate, UITableViewDataSource
 {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return countryName.count
